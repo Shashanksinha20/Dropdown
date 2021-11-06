@@ -1,0 +1,51 @@
+.contract_current{
+    border: 1px solid #dedede;
+    max-width: 160px;
+    height: 63px;
+    border-radius: 4px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 5px 10px;
+    min-width: 100px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.contract_current .type{
+    font-size: 14px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+.arrow_down{
+    width: 8px;
+    height: 8px;
+    background: url("./assets/ic_arrow_dropdown_light.svg") no-repeat;
+    background-size: contain;
+    margin-left: 10px;
+    position: relative;
+    top: 3px;
+    float: right;
+}
+.contract { 
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.items.active{
+    background-color: #2A3052;
+    color: #FFFFFF;
+}
+
+  
+    
+    
+    
