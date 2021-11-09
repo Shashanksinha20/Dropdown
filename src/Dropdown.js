@@ -17,11 +17,10 @@ export const Dropdown = () => {
     e.target.classList.add("active");
     console.log(current_item, current_heading);
     setItem(current_item);
-    setHeading(current_heading);
+    setHeading(current_heading);        
     setTimeout(() => {
       setShowDropdown(false);
     },200)
-    
   };
 
   const dropdownHandler = () => {
@@ -31,16 +30,17 @@ export const Dropdown = () => {
 
   return (
     <>
-      <div class="col-xs-2 contract_current" onClick={dropdownHandler}>
-        <span class="type" id="type_heading">
-          {heading}
-          <span class="arrow_down "></span>
-        </span>
-        <span class="contract" id="contract_items">
-          {item}
-        </span>
-      </div>
-      {<Card clickHandler={clickHandleActive} showDropdown={showDropdown} />}
+        <div className = {`contract_current ${showDropdown ? "hider" : ""}`} onClick={dropdownHandler}>
+          <span className="type" id="type_heading">
+            {heading}
+            <span className="arrow_down "></span>
+          </span>
+          <span className="contract" id="contract_items">
+            {item}
+          </span>
+        </div>
+        {<Card clickHandler={clickHandleActive} showDropdown={showDropdown} />}
+     
     </>
   );
 };

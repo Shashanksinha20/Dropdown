@@ -8,14 +8,14 @@ import Col from "react-bootstrap/Col";
 
 export const CardList = ({ clickHandler, showDropdown }) => {
   return (
-    <Container className={`mt-4 container ${showDropdown ? "" : "hide"}`}>
+    <Container className={`container ${showDropdown ? "" : "hide"}`}>
       <Card className="card">
         <Row className="pb-3 mb-2">
-          <Col md={6} xs={12} class="col-container">
-            <div class="col_header">Up/Down</div>
-            <div class="col_elements">
+          <Col md={6} xs={12} className="col-container">
+            <div className="col_header">Up/Down</div>
+            <div className="col_elements">
               <div
-                class="items mb-2 active"
+                className="items mb-2 active"
                 onClick={(e) => {
                   clickHandler(e, "Up/Down", "Rise/Fall");
                 }}
@@ -23,7 +23,7 @@ export const CardList = ({ clickHandler, showDropdown }) => {
                 Rise/Fall
               </div>
               <div
-                class="items"
+                className="items"
                 onClick={(e) => {
                   clickHandler(e, "Up/Down", "Higher/Lower");
                 }}
@@ -32,24 +32,24 @@ export const CardList = ({ clickHandler, showDropdown }) => {
               </div>
             </div>
           </Col>
-          <Col md={6} xs={12} class="col-container">
-            <div class="col_header medq">Touch/No Touch</div>
+          <Col md={6} xs={12} className="col-container">
+            <div className="col_header medq">Touch/No Touch</div>
             <div
-              class="col_elements"
+              className="col_elements"
               onClick={(e) => {
                 clickHandler(e, "Touch/No Touch", "Touch/No Touch");
               }}
             >
-              <div class="items">Touch/No Touch</div>
+              <div className="items">Touch/No Touch</div>
             </div>
           </Col>
         </Row>
-        <Row lassName="pt-3 pb-3">
-          <Col md={6} xs={12} class="col-container">
-            <div class="col_header">In/Out</div>
-            <div class="col_elements">
+        <Row className="pt-3 pb-3">
+          <Col md={6} xs={12} className="col-container">
+            <div className="col_header">In/Out</div>
+            <div className="col_elements">
               <div
-                class="items mb-2"
+                className="items mb-2"
                 onClick={(e) => {
                   clickHandler(e, "In/Out", "Ends Between/Ends Outside");
                 }}
@@ -57,7 +57,7 @@ export const CardList = ({ clickHandler, showDropdown }) => {
                 Ends Between/Ends Outside
               </div>
               <div
-                class="items "
+                className="items "
                 onClick={(e) => {
                   clickHandler(e, "In/Out", "Stays Between/Goes Outside");
                 }}
@@ -66,11 +66,11 @@ export const CardList = ({ clickHandler, showDropdown }) => {
               </div>
             </div>
           </Col>
-          <Col md={6} xs={12} class="col-container">
-            <div class="col_header medq">Digits</div>
-            <div class="col_elements">
+          <Col md={6} xs={12} className="col-container">
+            <div className="col_header medq">Digits</div>
+            <div className="col_elements">
               <div
-                class="items mb-2"
+                className="items mb-2"
                 onClick={(e) => {
                   clickHandler(e, "Digits", "Matches/Differs");
                 }}
@@ -78,7 +78,7 @@ export const CardList = ({ clickHandler, showDropdown }) => {
                 Matches/Differs
               </div>
               <div
-                class="items mb-2"
+                className="items mb-2"
                 onClick={(e) => {
                   clickHandler(e, "Digits", "Even/Odd");
                 }}
@@ -86,7 +86,7 @@ export const CardList = ({ clickHandler, showDropdown }) => {
                 Even/Odd
               </div>
               <div
-                class="items "
+                className="items "
                 onClick={(e) => {
                   clickHandler(e, "Digits", "Over/Under");
                 }}
